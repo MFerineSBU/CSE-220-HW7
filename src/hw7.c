@@ -12,19 +12,55 @@ void free_bst_sf(bst_sf *root) {
 }
 
 matrix_sf* add_mats_sf(const matrix_sf *mat1, const matrix_sf *mat2) {
-    return NULL;
+    matrix_sf *mat3 = malloc(sizeof(matrix_sf) + mat1->num_rows * mat1-> num_cols * sizeof(int)); //Allocate memory needed to do matrix addition
+    mat3->name = '!'; //Define name of matrix made on the fly 
+    mat3->num_rows = mat1->num_rows;  //Define dimensions of matrix made on the fly 
+    mat3->num_cols = mat1->num_cols;  
+    for (size_t i = 0; i < mat1->num_rows * mat1->num_cols; i++) //Loop through the dimensions of the matrices 
+    {
+        mat3->values[i] = mat1->values[i] + mat2->values[i]; //New matrix value is equal to mat1+mat2 at the given index i 
+    }
+    
+    return mat3; //return pointer to new matrix 
 }
 
 matrix_sf* mult_mats_sf(const matrix_sf *mat1, const matrix_sf *mat2) {
-   return NULL;
+   matrix_sf *mat3 = malloc(sizeof(matrix_sf) + mat1->num_rows * mat2->num_cols * sizeof(int)); //Allocate memory needed for matrix multiplication
+   if(mat1->num_cols != mat2->num_rows){ 
+    return NULL; //If there is no shared dimension, return NULL
+   }
+   mat3->name = '!'; 
+   mat3->num_rows = mat1->num_rows;
+   mat3->num_cols = mat2->num_cols; //Define name and dimensions of new matrix
+   for(size_t i = 0; i<mat1->num_rows; i++){ //Set up loops to go through all of the rows and cols of new matrix
+    for(size_t j = 0; j<mat2->num_cols; j++){
+        int mat_mult = 0;
+        for(size_t k = 0; k<mat1->num_cols; k++){ //As well as the shared dimension of the matrix
+            int a = mat1->values[i * mat1->num_cols + k];  //Compute row elements from matrix 1
+            int b = mat2->values[k * mat2->num_cols + j];  //Compute column elements from matrix 2 
+            mat_mult += a*b; //Compute the result by multiplying the two together 
+        }
+        mat3->values[i* mat2->num_cols + j] = mat_mult; //Define new value of multiplied matrix at index (i,j)
+    }
+   }
+   return mat3; //Return multiplied matrix 
 }
 
 matrix_sf* transpose_mat_sf(const matrix_sf *mat) {
-    return NULL;
+    matrix_sf *mat_r = malloc(sizeof(matrix_sf) + mat->num_cols * mat->num_rows * sizeof(int)); //Allocate memory for a matrix the size of the transposed matrix
+    mat_r->name = '!'; 
+    mat_r->num_rows = mat->num_cols;
+    mat_r->num_cols = mat->num_rows;  //Define name and dimensions of transposed matrix 
+    for(size_t i = 0; i<mat->num_rows; i++){ 
+        for(size_t j = 0; i<mat->num_cols; j++){ //Loop through all rows and cols of matrix
+            mat_r->values[j*mat_r->num_cols + i] = mat->values[i*mat->num_cols + j]; //Swap the values at (i,j) to (j,i)
+        }
+    }
+    return mat_r; //return transpose matrix 
 }
 
 matrix_sf* create_matrix_sf(char name, const char *expr) {
-    return NULL;
+
 }
 
 char* infix2postfix_sf(char *infix) {
