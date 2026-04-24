@@ -1,0 +1,1039 @@
+{
+  "id": "Criterion v2.4.1",
+  "passed": 170,
+  "failed": 0,
+  "errored": 0,
+  "skipped": 0,
+  "test_suites": [
+    {
+      "name": "student_test_9",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "eval_unknown_var",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_transpose_H",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_single_matrix",
+          "assertions": 4,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_result_name",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_paren_add",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_mult_GC",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_incompatible_mult",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_double_transpose",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_add_CD",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "eval_add_AB",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_8",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "transpose_only",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "transpose_before_mult",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "three_operands_mult",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "spaces_ignored",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "single_operand",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "simple_mult",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "simple_add",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "parens_override",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "nested_parens",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "complex_expr",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_7",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "create_zeros",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_name_stored",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_mixed_signs",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_dims_correct",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_5x1",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_3x3_neg",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_2x4",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_2x2",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_1x5",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "create_1x1",
+          "assertions": 4,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_6",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "trans_symmetric",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_result_name",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_negatives",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_double",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_dims_swapped",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_4x1",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_3x2",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_2x3",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_1x4",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_1x1",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_5",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "mult_result_name",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_outer_product",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_negatives",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_incompatible_dims",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_dot_product",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_by_zero",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_by_identity",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_2x3_3x4",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_2x2",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_1x1",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_4",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "add_zero_matrix",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_row_mismatch",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_result_name",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_negatives",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_large_values",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_dimension_mismatch",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_col_mismatch",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_3x3",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_2x2",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_1x1",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_3",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "free_three_nodes_balanced",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_two_nodes",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_ten_nodes",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_six_nodes",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_single_node",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_right_skewed",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_null_noop",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_left_skewed",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_and_rebuild",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_after_duplicate",
+          "assertions": 0,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_2",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "find_root",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_right_child",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_returns_exact_pointer",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_nonexistent_large",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_multiple",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_missing_returns_null",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_left_child",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_empty_tree",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_deep_node",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_all_nodes",
+          "assertions": 16,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_10",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "exec_script18_valgrind",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script14_valgrind",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script10_valgrind",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script09_correct",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script07_correct",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script05_valgrind",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script04_valgrind",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script03_correct",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script02_correct",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "exec_script01_correct",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "student_test_1",
+      "passed": 10,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "two_node_children_null",
+          "assertions": 4,
+          "status": "PASSED"
+        },
+        {
+          "name": "smaller_goes_left",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "single_node",
+          "assertions": 4,
+          "status": "PASSED"
+        },
+        {
+          "name": "root_unchanged_after_inserts",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "larger_goes_right",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "large_set_sorted",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "inorder_sorted_4",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "duplicate_replaces",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "descending_left_skew",
+          "assertions": 2,
+          "status": "PASSED"
+        },
+        {
+          "name": "ascending_right_skew",
+          "assertions": 2,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_operator_valgrind",
+      "passed": 6,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "trans02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_operator_return",
+      "passed": 6,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "trans02",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans01",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult02",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult01",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add02",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "add01",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_insert_bst",
+      "passed": 3,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "insert_bst03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "insert_bst02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "insert_bst01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_infix2postfix",
+      "passed": 4,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "infix2postfix04",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "infix2postfix03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "infix2postfix02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "infix2postfix01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_free_bst",
+      "passed": 3,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "free_bst03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_bst02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_bst01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_find_bst",
+      "passed": 3,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "search_bst03",
+          "assertions": 9,
+          "status": "PASSED"
+        },
+        {
+          "name": "search_bst02",
+          "assertions": 5,
+          "status": "PASSED"
+        },
+        {
+          "name": "search_bst01",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_execute_valgrind",
+      "passed": 20,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "trans_mat03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_mat02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_mat01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script20",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script19",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script18",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script17",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script16",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script15",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script14",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script13",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script12",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script11",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script10",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_execute",
+      "passed": 20,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "trans_mat03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_mat02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_mat01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script20",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script19",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script18",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script17",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script16",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script15",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script14",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script13",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script12",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script11",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "script10",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "mult_mats01",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats03",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats02",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "add_mats01",
+          "assertions": 1,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_evaluate_expr",
+      "passed": 3,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "expr03",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "expr02",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "expr01",
+          "assertions": 3,
+          "status": "PASSED"
+        }
+      ]
+    },
+    {
+      "name": "base_create_matrix",
+      "passed": 2,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "tests": [
+        {
+          "name": "create02",
+          "assertions": 4,
+          "status": "PASSED"
+        },
+        {
+          "name": "create01",
+          "assertions": 4,
+          "status": "PASSED"
+        }
+      ]
+    }
+  ]
+}
