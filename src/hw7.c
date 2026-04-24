@@ -43,11 +43,11 @@ void free_bst_sf(bst_sf *root) {
 }
 
 matrix_sf* add_mats_sf(const matrix_sf *mat1, const matrix_sf *mat2) {
-    if (mat1->num_rows != mat2->num_rows || mat1->num_cols != mat2->num_cols) {
+    if (mat1->num_rows != mat2->num_rows || mat1->num_cols != mat2->num_cols) { //NULL checker
         return NULL; 
     }
     matrix_sf *mat3 = malloc(sizeof(matrix_sf) + mat1->num_rows * mat1-> num_cols * sizeof(int)); //Allocate memory needed to do matrix addition
-    mat3->name = '!'; //Define name of matrix made on the fly 
+    mat3->name = '?'; //Define name of matrix made on the fly 
     mat3->num_rows = mat1->num_rows;  //Define dimensions of matrix made on the fly 
     mat3->num_cols = mat1->num_cols;  
     for (size_t i = 0; i < mat1->num_rows * mat1->num_cols; i++) //Loop through the dimensions of the matrices 
@@ -63,7 +63,7 @@ matrix_sf* mult_mats_sf(const matrix_sf *mat1, const matrix_sf *mat2) {
     return NULL; //If there is no shared dimension, return NULL
    }
    matrix_sf *mat3 = malloc(sizeof(matrix_sf) + mat1->num_rows * mat2->num_cols * sizeof(int)); //Allocate memory needed for matrix multiplication
-   mat3->name = '!'; 
+   mat3->name = '?'; 
    mat3->num_rows = mat1->num_rows;
    mat3->num_cols = mat2->num_cols; //Define name and dimensions of new matrix
    for(size_t i = 0; i<mat1->num_rows; i++){ //Set up loops to go through all of the rows and cols of new matrix
@@ -85,7 +85,7 @@ matrix_sf* transpose_mat_sf(const matrix_sf *mat) {
         return NULL;
     }
     matrix_sf *mat_r = malloc(sizeof(matrix_sf) + mat->num_cols * mat->num_rows * sizeof(int)); //Allocate memory for a matrix the size of the transposed matrix
-    mat_r->name = '!'; 
+    mat_r->name = '?'; 
     mat_r->num_rows = mat->num_cols;
     mat_r->num_cols = mat->num_rows;  //Define name and dimensions of transposed matrix 
     for(size_t i = 0; i<mat->num_rows; i++){ 
@@ -219,7 +219,7 @@ matrix_sf* evaluate_expr_sf(char name, char *expr, bst_sf *root) {
                 return NULL; 
             }
 
-            if (m->name == '!') {
+            if (m->name == '?') {
                 free(m);          //  free temps
             }
 
@@ -237,10 +237,10 @@ matrix_sf* evaluate_expr_sf(char name, char *expr, bst_sf *root) {
 
             matrix_sf *result = (c == '+') ? add_mats_sf(mat1, mat2): mult_mats_sf(mat1, mat2); //Depending on operator selected, either do matrix addition or multiplication 
             if (!result) { //If operation doesn't work, free temps, postfix and return null
-                if (mat1->name == '!'){
+                if (mat1->name == '?'){
                     free(mat1);
                 } 
-                if (mat2->name == '!'){
+                if (mat2->name == '?'){
                     free(mat2);
                 }
                 free(postfix);
@@ -248,10 +248,10 @@ matrix_sf* evaluate_expr_sf(char name, char *expr, bst_sf *root) {
             }
                 
             
-            if (mat1->name == '!'){  //Free temps
+            if (mat1->name == '?'){  //Free temps
                 free(mat1);
             }
-            if (mat2->name == '!'){
+            if (mat2->name == '?'){
                 free(mat2);
             } 
 
@@ -271,7 +271,7 @@ matrix_sf* evaluate_expr_sf(char name, char *expr, bst_sf *root) {
     }  //Null checker for result matrix
 
     matrix_sf *final;
-    if (result->name == '!') {
+    if (result->name == '?') {
         final = result;          //Reuse our temp to store result matrix
     } else {
         final = copy_matrix(result->num_rows, result->num_cols, result->values); //Copy our resulting matrix

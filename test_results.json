@@ -146,7 +146,7 @@
           "status": "PASSED"
         },
         {
-          "name": "create_dims_correct",
+          "name": "create_dimensions_correct",
           "assertions": 2,
           "status": "PASSED"
         },
@@ -156,7 +156,7 @@
           "status": "PASSED"
         },
         {
-          "name": "create_3x3_neg",
+          "name": "create_3x3_negative",
           "assertions": 3,
           "status": "PASSED"
         },
@@ -200,8 +200,13 @@
           "status": "PASSED"
         },
         {
-          "name": "trans_negatives",
+          "name": "trans_negative",
           "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_dimensions_swapped",
+          "assertions": 2,
           "status": "PASSED"
         },
         {
@@ -210,17 +215,7 @@
           "status": "PASSED"
         },
         {
-          "name": "trans_dims_swapped",
-          "assertions": 2,
-          "status": "PASSED"
-        },
-        {
           "name": "trans_4x1",
-          "assertions": 3,
-          "status": "PASSED"
-        },
-        {
-          "name": "trans_3x2",
           "assertions": 3,
           "status": "PASSED"
         },
@@ -230,12 +225,17 @@
           "status": "PASSED"
         },
         {
-          "name": "trans_1x4",
+          "name": "trans_3x2",
           "assertions": 3,
           "status": "PASSED"
         },
         {
           "name": "trans_1x1",
+          "assertions": 3,
+          "status": "PASSED"
+        },
+        {
+          "name": "trans_1x4",
           "assertions": 3,
           "status": "PASSED"
         }
@@ -259,12 +259,12 @@
           "status": "PASSED"
         },
         {
-          "name": "mult_negatives",
+          "name": "mult_negative",
           "assertions": 3,
           "status": "PASSED"
         },
         {
-          "name": "mult_incompatible_dims",
+          "name": "mult_incompatible_dimensions",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -323,7 +323,7 @@
           "status": "PASSED"
         },
         {
-          "name": "add_negatives",
+          "name": "add_negative",
           "assertions": 3,
           "status": "PASSED"
         },
@@ -367,12 +367,12 @@
       "skipped": 0,
       "tests": [
         {
-          "name": "free_three_nodes_balanced",
+          "name": "free_two_nodes",
           "assertions": 0,
           "status": "PASSED"
         },
         {
-          "name": "free_two_nodes",
+          "name": "free_three_nodes",
           "assertions": 0,
           "status": "PASSED"
         },
@@ -392,27 +392,27 @@
           "status": "PASSED"
         },
         {
-          "name": "free_right_skewed",
+          "name": "free_right_skew",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "free_null_noop",
+          "name": "free_rebuild",
           "assertions": 0,
           "status": "PASSED"
         },
         {
-          "name": "free_left_skewed",
+          "name": "free_null",
+          "assertions": 0,
+          "status": "PASSED"
+        },
+        {
+          "name": "free_left_skew",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "free_and_rebuild",
-          "assertions": 0,
-          "status": "PASSED"
-        },
-        {
-          "name": "free_after_duplicate",
+          "name": "free_duplicate",
           "assertions": 0,
           "status": "PASSED"
         }
@@ -436,12 +436,7 @@
           "status": "PASSED"
         },
         {
-          "name": "find_returns_exact_pointer",
-          "assertions": 1,
-          "status": "PASSED"
-        },
-        {
-          "name": "find_nonexistent_large",
+          "name": "find_nonexistent",
           "assertions": 2,
           "status": "PASSED"
         },
@@ -451,7 +446,7 @@
           "status": "PASSED"
         },
         {
-          "name": "find_missing_returns_null",
+          "name": "find_missing",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -461,12 +456,17 @@
           "status": "PASSED"
         },
         {
-          "name": "find_empty_tree",
+          "name": "find_exact_pointer",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "find_deep_node",
+          "name": "find_empty",
+          "assertions": 1,
+          "status": "PASSED"
+        },
+        {
+          "name": "find_deep",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -549,7 +549,7 @@
           "status": "PASSED"
         },
         {
-          "name": "smaller_goes_left",
+          "name": "smaller_on_left",
           "assertions": 2,
           "status": "PASSED"
         },
@@ -559,12 +559,12 @@
           "status": "PASSED"
         },
         {
-          "name": "root_unchanged_after_inserts",
+          "name": "root_unchanged",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "larger_goes_right",
+          "name": "larger_on_right",
           "assertions": 2,
           "status": "PASSED"
         },
@@ -574,22 +574,22 @@
           "status": "PASSED"
         },
         {
-          "name": "inorder_sorted_4",
+          "name": "inorder_sorted",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "duplicate_replaces",
+          "name": "duplicate_replacement",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "descending_left_skew",
+          "name": "descending_left",
           "assertions": 2,
           "status": "PASSED"
         },
         {
-          "name": "ascending_right_skew",
+          "name": "ascending_right",
           "assertions": 2,
           "status": "PASSED"
         }
@@ -681,12 +681,12 @@
       "skipped": 0,
       "tests": [
         {
-          "name": "insert_bst03",
+          "name": "insert_bst02",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "insert_bst02",
+          "name": "insert_bst03",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -817,12 +817,12 @@
           "status": "PASSED"
         },
         {
-          "name": "script16",
+          "name": "script15",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "script15",
+          "name": "script16",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -837,12 +837,12 @@
           "status": "PASSED"
         },
         {
-          "name": "script12",
+          "name": "script11",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "script11",
+          "name": "script12",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -936,12 +936,12 @@
           "status": "PASSED"
         },
         {
-          "name": "script14",
+          "name": "script13",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "script13",
+          "name": "script14",
           "assertions": 1,
           "status": "PASSED"
         },
@@ -951,12 +951,12 @@
           "status": "PASSED"
         },
         {
-          "name": "script11",
+          "name": "script10",
           "assertions": 1,
           "status": "PASSED"
         },
         {
-          "name": "script10",
+          "name": "script11",
           "assertions": 1,
           "status": "PASSED"
         },

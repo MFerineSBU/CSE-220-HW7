@@ -410,7 +410,7 @@ Test(student_test_4, add_result_name) {
     matrix_sf *A = copy_matrix(1, 1, (int[]){1});
     matrix_sf *B = copy_matrix(1, 1, (int[]){2});
     matrix_sf *C = add_mats_sf(A, B);
-    cr_expect_eq(C->name, '!');
+    cr_expect_eq(C->name, '?');
     free(A); free(B); free(C);
 }
 
@@ -489,7 +489,7 @@ Test(student_test_5, mult_result_name) {
     matrix_sf *A = copy_matrix(1, 1, (int[]){2});
     matrix_sf *B = copy_matrix(1, 1, (int[]){3});
     matrix_sf *C = mult_mats_sf(A, B);
-    cr_expect_eq(C->name, '!');
+    cr_expect_eq(C->name, '?');
     free(A); free(B); free(C);
 }
 
@@ -561,7 +561,7 @@ Test(student_test_6, trans_dimensions_swapped) {
 Test(student_test_6, trans_result_name) {
     matrix_sf *A = copy_matrix(1, 2, (int[]){1, 2});
     matrix_sf *T = transpose_mat_sf(A);
-    cr_expect_eq(T->name, '!');
+    cr_expect_eq(T->name, '?');
     free(A); free(T);
 }
 
