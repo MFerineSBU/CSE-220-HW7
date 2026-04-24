@@ -1,6 +1,5 @@
 #include "unit_tests.h"
 #include "hw7.h"
-#include "unit_tests.h"
 
 extern void inorder_sf(bst_sf *root, char *output);
 extern void sort_string_sf(char *str);
@@ -19,7 +18,7 @@ Test(student_test_1, single_node) {
     free(root);
 }
 
-Test(student_test_1, smaller_goes_left) {
+Test(student_test_1, smaller_on_left) {
     bst_sf *root = NULL;
     matrix_sf *m1 = malloc(sizeof(matrix_sf)); m1->name = 'M';
     matrix_sf *m2 = malloc(sizeof(matrix_sf)); m2->name = 'A';
@@ -31,7 +30,7 @@ Test(student_test_1, smaller_goes_left) {
     free(root->left_child); free(root);
 }
 
-Test(student_test_1, larger_goes_right) {
+Test(student_test_1, larger_on_right) {
     bst_sf *root = NULL;
     matrix_sf *m1 = malloc(sizeof(matrix_sf)); m1->name = 'M';
     matrix_sf *m2 = malloc(sizeof(matrix_sf)); m2->name = 'Z';
@@ -43,7 +42,7 @@ Test(student_test_1, larger_goes_right) {
     free(root->right_child); free(root);
 }
 
-Test(student_test_1, duplicate_replaces) {
+Test(student_test_1, duplicate_replacement) {
     bst_sf *root = NULL;
     matrix_sf *m1 = malloc(sizeof(matrix_sf)); m1->name = 'K';
     matrix_sf *m2 = malloc(sizeof(matrix_sf)); m2->name = 'K';
@@ -53,7 +52,7 @@ Test(student_test_1, duplicate_replaces) {
     free(m1); free(m2); free(root);
 }
 
-Test(student_test_1, inorder_sorted_4) {
+Test(student_test_1, inorder_sorted) {
     bst_sf *root = NULL;
     char names[] = "DCBA";
     matrix_sf *mats[4];
@@ -85,7 +84,7 @@ Test(student_test_1, large_set_sorted) {
     for (int i = 0; i < n; i++) free(mats[i]);
 }
 
-Test(student_test_1, ascending_right_skew) {
+Test(student_test_1, ascending_right) {
     bst_sf *root = NULL;
     char names[] = "ABCDE";
     matrix_sf *mats[5];
@@ -99,7 +98,7 @@ Test(student_test_1, ascending_right_skew) {
     for (int i = 0; i < 5; i++) free(mats[i]);
 }
 
-Test(student_test_1, descending_left_skew) {
+Test(student_test_1, descending_left) {
     bst_sf *root = NULL;
     char names[] = "EDCBA";
     matrix_sf *mats[5];
@@ -113,7 +112,7 @@ Test(student_test_1, descending_left_skew) {
     for (int i = 0; i < 5; i++) free(mats[i]);
 }
 
-Test(student_test_1, root_unchanged_after_inserts) {
+Test(student_test_1, root_unchanged) {
     bst_sf *root = NULL;
     char names[] = "MFPAS";
     matrix_sf *mats[5];
@@ -172,7 +171,7 @@ Test(student_test_2, find_right_child) {
     free(root->right_child); free(root);
 }
 
-Test(student_test_2, find_missing_returns_null) {
+Test(student_test_2, find_missing) {
     bst_sf *root = NULL;
     matrix_sf *m = malloc(sizeof(matrix_sf)); m->name = 'A';
     root = insert_bst_sf(m, root);
@@ -180,11 +179,11 @@ Test(student_test_2, find_missing_returns_null) {
     free(m); free(root);
 }
 
-Test(student_test_2, find_empty_tree) {
+Test(student_test_2, find_empty) {
     cr_expect_null(find_bst_sf('A', NULL));
 }
 
-Test(student_test_2, find_deep_node) {
+Test(student_test_2, find_deep) {
     bst_sf *root = NULL;
     char names[] = "MFAD";
     matrix_sf *mats[4];
@@ -212,7 +211,7 @@ Test(student_test_2, find_multiple) {
     for (int i = 0; i < 5; i++) free(mats[i]);
 }
 
-Test(student_test_2, find_nonexistent_large) {
+Test(student_test_2, find_nonexistent) {
     bst_sf *root = NULL;
     char names[] = "PKZMA";
     matrix_sf *mats[5];
@@ -226,7 +225,7 @@ Test(student_test_2, find_nonexistent_large) {
     for (int i = 0; i < 5; i++) free(mats[i]);
 }
 
-Test(student_test_2, find_returns_exact_pointer) {
+Test(student_test_2, find_exact_pointer) {
     bst_sf *root = NULL;
     matrix_sf *m = malloc(sizeof(matrix_sf)); m->name = 'T';
     root = insert_bst_sf(m, root);
@@ -256,11 +255,11 @@ Test(student_test_3, free_single_node) {
     expect_no_valgrind_errors(run_with_valgrind("free_bst01"));
 }
 
-Test(student_test_3, free_left_skewed) {
+Test(student_test_3, free_left_skew) {
     expect_no_valgrind_errors(run_with_valgrind("free_bst02"));
 }
 
-Test(student_test_3, free_right_skewed) {
+Test(student_test_3, free_right_skew) {
     expect_no_valgrind_errors(run_with_valgrind("free_bst03"));
 }
 
@@ -273,11 +272,11 @@ Test(student_test_3, free_two_nodes) {
     free_bst_sf(root);
 }
 
-Test(student_test_3, free_null_noop) {
+Test(student_test_3, free_null) {
     free_bst_sf(NULL);
 }
 
-Test(student_test_3, free_three_nodes_balanced) {
+Test(student_test_3, free_three_nodes) {
     bst_sf *root = NULL;
     matrix_sf *mats[3];
     char names[] = "MAZ";
@@ -313,7 +312,7 @@ Test(student_test_3, free_ten_nodes) {
     free_bst_sf(root);
 }
 
-Test(student_test_3, free_after_duplicate) {
+Test(student_test_3, free_duplicate) {
     bst_sf *root = NULL;
     matrix_sf *m1 = malloc(sizeof(matrix_sf)); m1->name = 'K';
     matrix_sf *m2 = malloc(sizeof(matrix_sf)); m2->name = 'K';
@@ -323,7 +322,7 @@ Test(student_test_3, free_after_duplicate) {
     free_bst_sf(root);
 }
 
-Test(student_test_3, free_and_rebuild) {
+Test(student_test_3, free_rebuild) {
     for (int pass = 0; pass < 2; pass++) {
         bst_sf *root = NULL;
         char names[] = "MFPBHJ";
@@ -353,7 +352,7 @@ Test(student_test_4, add_2x2) {
     free(A); free(B); free(C);
 }
 
-Test(student_test_4, add_negatives) {
+Test(student_test_4, add_negative) {
     matrix_sf *A = copy_matrix(1, 3, (int[]){-1, -2, -3});
     matrix_sf *B = copy_matrix(1, 3, (int[]){1, 2, 3});
     matrix_sf *C = add_mats_sf(A, B);
@@ -447,7 +446,7 @@ Test(student_test_5, mult_outer_product) {
     free(A); free(B); free(C);
 }
 
-Test(student_test_5, mult_incompatible_dims) {
+Test(student_test_5, mult_incompatible_dimensions) {
     matrix_sf *A = copy_matrix(2, 3, (int[]){1, 2, 3, 4, 5, 6});
     matrix_sf *B = copy_matrix(2, 3, (int[]){1, 2, 3, 4, 5, 6});
     cr_expect_null(mult_mats_sf(A, B));
@@ -478,7 +477,7 @@ Test(student_test_5, mult_2x3_3x4) {
     free(A); free(B); free(C);
 }
 
-Test(student_test_5, mult_negatives) {
+Test(student_test_5, mult_negative) {
     matrix_sf *A = copy_matrix(2, 2, (int[]){-1, 2, -3, 4});
     matrix_sf *B = copy_matrix(2, 2, (int[]){5, -6, 7, -8});
     matrix_sf *C = mult_mats_sf(A, B);
@@ -544,14 +543,14 @@ Test(student_test_6, trans_double) {
     free(A); free(T); free(TT);
 }
 
-Test(student_test_6, trans_negatives) {
+Test(student_test_6, trans_negative) {
     matrix_sf *A = copy_matrix(2, 2, (int[]){-1, -2, -3, -4});
     matrix_sf *T = transpose_mat_sf(A);
     expect_matrices_equal(T, 2, 2, (int[]){-1, -3, -2, -4});
     free(A); free(T);
 }
 
-Test(student_test_6, trans_dims_swapped) {
+Test(student_test_6, trans_dimensions_swapped) {
     matrix_sf *A = copy_matrix(5, 3, (int[]){1,2,3,4,5,6,7,8,9,10,11,12,13,14,15});
     matrix_sf *T = transpose_mat_sf(A);
     cr_expect_eq(T->num_rows, 3u);
@@ -591,7 +590,7 @@ Test(student_test_7, create_2x2) {
     free(m);
 }
 
-Test(student_test_7, create_3x3_neg) {
+Test(student_test_7, create_3x3_negative) {
     matrix_sf *m = create_matrix_sf('N', "3 3 [-1 -2 -3 ; -4 -5 -6 ; -7 -8 -9 ;]");
     expect_matrices_equal(m, 3, 3, (int[]){-1,-2,-3,-4,-5,-6,-7,-8,-9});
     free(m);
@@ -609,7 +608,7 @@ Test(student_test_7, create_name_stored) {
     free(m);
 }
 
-Test(student_test_7, create_dims_correct) {
+Test(student_test_7, create_dimensions_correct) {
     matrix_sf *m = create_matrix_sf('D', "4 3 [1 2 3 ; 4 5 6 ; 7 8 9 ; 10 11 12 ;]");
     cr_expect_eq(m->num_rows, 4u);
     cr_expect_eq(m->num_cols, 3u);
