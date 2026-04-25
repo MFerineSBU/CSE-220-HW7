@@ -22,10 +22,10 @@ matrix_sf* find_bst_sf(char name, bst_sf *root) {
     if(root == NULL){
         return NULL; //If NULL, return NULL 
     }
-    if(name == root->mat->name){ //If the name and the name at the root are equal, recursively call the function in the left subtree to find the matrix
-        return root->mat;
+    if(name == root->mat->name){ 
+        return root->mat; //If they are equal, return the matrix
     }
-    else if (name < root->mat->name){
+    else if (name < root->mat->name){ //If the name is less than the name at root, recursively call the function in the left subtree to find the matrix
         return find_bst_sf(name, root->left_child); 
     } else{
         return find_bst_sf(name, root->right_child); //Otherwise, recursively call the function in the right subtree to find the matrix
@@ -231,7 +231,7 @@ matrix_sf* evaluate_expr_sf(char name, char *expr, bst_sf *root) {
                 free(postfix); 
                 return NULL; 
             }
-            matrix_sf *mat2 = stack[top--]; //Pop operands left to right
+            matrix_sf *mat2 = stack[top--]; //Pop operands
             matrix_sf *mat1 = stack[top--];
 
 
